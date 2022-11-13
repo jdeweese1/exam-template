@@ -1,0 +1,43 @@
+---
+title: The document title
+subject: My Amazing Subject here
+date: 11-13-22
+print_answers: True
+author: Put your name here
+questions:
+- name: "What is your favorite color"
+  options:
+    - correctblue
+    - orange
+    - red
+- name: Explain what a NAT is and why you would use in in a cloud computing environment.
+- name: What is an API?
+  options:
+    - Application Proxy Intermediator
+    - Addressable Port Initiation
+    - correct Application Programming Interface
+- name: Describe the 5 key parts of a the failover process.
+- name: What is kubernetes? What problems does it solve, and how does our org use it in our DevOps model?
+- name: Explain how to extend a k8s resources using a custom resource definition.
+- name: One of your kubernetes resources is behaving strangely - what commands might you run to get to the root of the issue? Hint - check pod health
+- name: Explain how
+- name: I want extra credit
+  options:
+    - No I don't want to improve my grade, and I will leave free extra credit on the table
+    - correct Yes
+    - It's complicated
+- name: TODO How does CIDR work?
+  options:
+    - Its a good drink
+    - correctIt's a modern protocol for addressing machines on the internet
+
+- name: You need to zip the contents of a log/ directory. Provide a tar command that creates a zipped archive of log/ with and puts the result into the current directory
+- name: What is Prometheus? Where is is hosted, where does it obtain its data, and where do its alerts fire off to?
+- name: Describe the path of how variables end up going from secrets manager to being used in production. What sequence of make calls are used?
+- name: What is an AMI?
+- name: Open question
+- name: Open question
+- name: Open question
+- name: Open question
+- name: Open question
+...
