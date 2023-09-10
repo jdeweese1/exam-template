@@ -1,0 +1,50 @@
+{
+  "hacer": {
+    "present": {
+      "yo": "hago",
+      "tu": "haces",
+      "elellausted": "hace",
+      "nosotros": "hacemos",
+      "ellosellasuds": "hacen"
+    },
+    "preterite": {
+      "yo": "hice",
+      "tu": "hiciste",
+      "elellausted": "hizo",
+      "nosotros": "hicimos",
+      "ellosellasuds": "hicieron"
+    }
+  },
+  "escuchar": {
+    "present": {
+      "yo": "escucho",
+      "tu": "escuchas",
+      "elellausted": "escucha",
+      "nosotros": "escuchamos",
+      "ellosellasuds": "escuchan"
+    },
+    "preterite": {
+      "yo": "escuche",
+      "tu": "escuchaste",
+      "elellausted": "escuchó",
+      "nosotros": "escuchamos",
+      "ellosellasuds": "escucharon"
+    }
+  },
+  "tener": {
+    "present": {
+      "yo": "tengo",
+      "tu": "tienes",
+      "elellausted": "tiene",
+      "nosotros": "tenemos",
+      "ellosellasuds": "tienen"
+    },
+    "preterite": {
+      "yo": "tuve",
+      "tu": "tuviste",
+      "elellausted": "tuvo",
+      "nosotros": "tuvimos",
+      "ellosellasuds": "tuvieron"
+    }
+  }
+}

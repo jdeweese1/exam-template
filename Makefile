@@ -11,9 +11,20 @@ install: clean
 	wget  https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz -O  texlive.tar.gz
 	tar -xvzf texlive.tar.gz -C outdir
 
-upload: pdf
-	aws s3 cp example.pdf s3://jarod-public-s3/exams/example.pdf
-	aws s3 cp example_key.pdf s3://jarod-public-s3/exams/example_key.pdf
+upload:
+	aws s3 cp $(BASE_FILE_NAME).pdf s3://jarod-public-s3/exams/$(BASE_FILE_NAME).pdf
+	aws s3 cp $(BASE_FILE_NAME)_key.pdf s3://jarod-public-s3/exams/$(BASE_FILE_NAME)_key.pdf
+	
+
+
+spanish-%: export B64_ENV_QUESTIONS=$(shell python3 question_transformer.py $(QUESTION_TYPE)|base64 -w0)
+spanish-%: export BASE_FILE_NAME=span_questions_$(QUESTION_TYPE)
+spanish-%: export QUESTION_TYPE=$*
+spanish-%:
+	./populate_template.sh
+	pandoc --pdf-engine pdflatex --template exam-template-key.tex  empty.md $(BASE_FILE_NAME).yml  --output $(BASE_FILE_NAME)_key.pdf
+	pandoc --pdf-engine pdflatex --template exam-template.tex  empty.md $(BASE_FILE_NAME).yml  --output $(BASE_FILE_NAME).pdf
+	$(MAKE) upload
 	
 	
 clean:
