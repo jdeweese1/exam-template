@@ -1,7 +1,7 @@
 ---
 title: Spanish Verb Conjugations
 subject: Espanol
-date: August 27,2023
+date: ${CURRENT_DATE}
 print_answers: True
 author: Jarod DeWeese
 questions:

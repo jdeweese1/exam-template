@@ -41,7 +41,7 @@ $for(questions)$
             \begin{checkboxes}
             $for(questions.options)$
                 \IfBeginWith{$it$}{correct}
-                {\CorrectChoice \StrBehind{$it$}{correct}}
+                {\CorrectChoice \hspace{1cm} \StrBehind{$it$}{correct}}
                 {\choice $it$}
             $endfor$
             \end{checkboxes}
