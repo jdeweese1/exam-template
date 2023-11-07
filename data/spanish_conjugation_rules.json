@@ -1,0 +1,18 @@
+{
+  "-ar": {
+    "present": {
+      "yo": "-o",
+      "tu": "-as",
+      "elellausted": "-a",
+      "nosotros": "-amos",
+      "ellosellasuds": "-an"
+    },
+    "preterite": {
+      "yo": "-e",
+      "tu": "-aste",
+      "elellausted": "-ó (o with an accent)",
+      "nosotros": "-amos",
+      "ellosellasuds": "-aron"
+    }
+  }
+}

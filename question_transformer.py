@@ -10,7 +10,7 @@ args = parser.parse_args()
 single_answer_template = """    \t- {option}\n"""
 
 
-if args.mode in ["verb", "conjugation"]:
+if args.mode in ["verbs", "conjugations"]:
     if args.mode == "verb":
         with open("data/spanish_verbs.json", "r") as f_reads:
             blob = json.loads(f_reads.read())
@@ -64,12 +64,12 @@ if args.mode in ["verb", "conjugation"]:
     for item in questions:
         print(item)
 else:
-    if args.mode not in ["vocab", "preposition"]:
+    if args.mode not in ["nouns", "prepositions"]:
         raise RuntimeError('Error')
-    if args.mode == 'vocab':
-        with open("data/spanish_vocab.json", "r") as f_reads:
+    if args.mode == 'nouns':
+        with open("data/spanish_nouns.json", "r") as f_reads:
             blob = json.loads(f_reads.read())
-    if args.mode == 'preposition':
+    if args.mode == 'prepositions':
         with open("data/spanish_prepositions.json", "r") as f_reads:
             blob = json.loads(f_reads.read())
 
