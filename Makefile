@@ -17,6 +17,7 @@ install: clean
 	tar -xvzf pandoc.tar.gz --strip-components 1 -C ~/.local
 	sudo yum install texlive
 	wget  https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz -O  texlive.tar.gz
+	(mkdir outdir || true)
 	tar -xvzf texlive.tar.gz -C outdir
 
 upload:
